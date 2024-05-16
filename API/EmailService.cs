@@ -31,7 +31,7 @@ namespace API
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("romeodavedalimocon@gmail.com", "yvtg ggnz wvyj yxvf"),
+                Credentials = new NetworkCredential("romeodavedalimocon@gmail.com", "ftnz xoel raum dnrp"),
                 EnableSsl = true,
             };
 

@@ -109,3 +109,11 @@ C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\
 C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\net8.0\System.Web.Http.Cors.dll
 C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\temp01\Desktop\Projects\Dotnet\LIBRARY-MANAGEMENT-SYSTEM\API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
