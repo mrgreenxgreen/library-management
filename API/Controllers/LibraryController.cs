@@ -11,10 +11,12 @@ public class LibraryController : ControllerBase
 {
     public Context Context {get;}
     public EmailService EmailService {get;}
-    public LibraryController(Context context, EmailService emailService)
+    public JwtService JwtService {get;}
+    public LibraryController(Context context, EmailService emailService, JwtService jwtService)
     {
         Context = context;
         EmailService = emailService;
+        JwtService = jwtService;
     }
 
     [HttpPost("register")]
@@ -48,5 +50,21 @@ public class LibraryController : ControllerBase
         return Ok( @"Thank you for registering. You account has ben sent for approval. Once it is approved, you will get an email.");
     }
 
+    [HttpGet("Login")]
+    public ActionResult Login(string email, string password)
+    {
+        if(Context.Users.Any(u => u.Email.Equals(email) && u.Password.Equals(password)))
+        {
+            var user = Context.Users.Single(user => user.Email.Equals(email) && user.Password.Equals(password));
+
+            if(user.AccountStatus == AccountStatus.UNAPROOVED)
+            { 
+                return Ok("unapproved");
+            }
+            return Ok(JwtService.GenerateToken(user));
+        }
+
+        return Ok("not found");
+    }
 }
 }
