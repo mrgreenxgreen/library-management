@@ -7,17 +7,19 @@ import { PageSideNavComponent } from './components/page-side-nav/page-side-nav.c
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { PageTableComponent } from './components/page-table/page-table.component';
 
 
 
 
 @NgModule({
   declarations: [
-    PageHeaderComponent, PageFooterComponent, PageSideNavComponent, PageNotFoundComponent,PageNotFoundComponent
+    PageHeaderComponent, PageFooterComponent, PageSideNavComponent, PageNotFoundComponent,PageNotFoundComponent, PageTableComponent
   ],
   imports: [
-    CommonModule, MaterialModule, ReactiveFormsModule, HttpClientModule
+    CommonModule, MaterialModule, ReactiveFormsModule, HttpClientModule,RouterModule
   ],
-  exports:[CommonModule, MaterialModule, PageHeaderComponent, PageFooterComponent, PageSideNavComponent, PageNotFoundComponent,  ReactiveFormsModule,]
+  exports:[CommonModule, MaterialModule, PageHeaderComponent, PageFooterComponent, PageSideNavComponent,PageTableComponent, PageNotFoundComponent,  ReactiveFormsModule,]
 })
 export class SharedModule { }
