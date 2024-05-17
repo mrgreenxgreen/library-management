@@ -36,18 +36,7 @@ export class BookStoreComponent {
       ],
     },
   ];
-
-  constructor(private apiService: ApiService, private snackBar: MatSnackBar) {
-    apiService.getBooks().subscribe({
-      next: (res: Book[]) => {
-        this.books = [];
-        res.forEach((b) => this.books.push(b));
-
-        this.updateList();
-      },
-    });
-  }
-
+  
   updateList() {
     this.booksToDisplay = [];
     for (let book of this.books) {
@@ -71,6 +60,18 @@ export class BookStoreComponent {
         });
       }
     }
+  }
+
+
+  constructor(private apiService: ApiService, private snackBar: MatSnackBar) {
+    apiService.getBooks().subscribe({
+      next: (res: Book[]) => {
+        this.books = [];
+        res.forEach((b) => this.books.push(b));
+
+        this.updateList();
+      },
+    });
   }
 
   searchBooks(value: string) {
